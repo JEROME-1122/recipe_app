@@ -20,7 +20,7 @@ export function FavList() {
   };
 
   return (
-    <div className="container mx-auto py-5">
+    <div className="container mx-auto py-5 mt-10">
       <h2 className="text-2xl font-bold mb-4">Favorite Items</h2>
 
       {favorites.length === 0 ? (
