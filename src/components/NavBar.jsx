@@ -43,8 +43,8 @@ export function NavBar() {
   }, []);
 
   return (
-    <>
-      <nav className="bg-[#000] text-white shadow">
+    <div className="fixed top-0 w-full z-999">
+      <nav className="bg-[#000] text-white shadow  py-2">
         <div className="container mx-auto py-3 px-4 flex items-center justify-between">
           <div className="text-xl font-bold">
             <NavLink to="/">LOGO</NavLink>
@@ -92,26 +92,25 @@ export function NavBar() {
           </button>
         </div>
 
-
         {isMenuOpen && (
-          <div className="lg:hidden block bg-[#111] px-4 py-3 space-y-3">
+          <div className="lg:hidden block bg-[#111] px-4 py-3  space-y-3">
             <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
-              Home
+              <p className="mb-2">Home</p>
             </NavLink>
             <NavLink to="/pizza" onClick={() => setIsMenuOpen(false)}>
-              Pizza
+              <p className="mb-2">Pizza</p>
             </NavLink>
             <NavLink to="/burger" onClick={() => setIsMenuOpen(false)}>
-              Burger
+              <p className="mb-2">Burger</p>
             </NavLink>
             <NavLink to="/beaf" onClick={() => setIsMenuOpen(false)}>
-              Beaf
+              <p className="mb-2"> Beaf</p>
             </NavLink>
             <NavLink to="/chicken" onClick={() => setIsMenuOpen(false)}>
-              Chicken
+              <p className="mb-2">Chicken</p>
             </NavLink>
             <NavLink to="/lamp" onClick={() => setIsMenuOpen(false)}>
-              Lamb
+              <p className="mb-2">Lamb</p>
             </NavLink>
 
             <NavLink
@@ -119,7 +118,7 @@ export function NavBar() {
               onClick={() => setIsMenuOpen(false)}
               className="relative inline-block"
             >
-              Fav
+              <p>Fav</p>
               {favCount > 0 && (
                 <span className="absolute -top-2 -right-3 bg-red-600 text-white rounded-full text-xs px-1">
                   {favCount}
@@ -130,7 +129,7 @@ export function NavBar() {
         )}
       </nav>
 
-      <div className="flex lg:hidden items-center justify-center mt-5 mb-3">
+      <div className="flex lg:hidden items-center justify-center py-5 mb-3 bg-white w-full">
         <form onSubmit={handleSearch} className="flex">
           <input
             type="text"
@@ -147,6 +146,6 @@ export function NavBar() {
           </button>
         </form>
       </div>
-    </>
+    </div>
   );
 }

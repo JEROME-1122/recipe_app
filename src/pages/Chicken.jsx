@@ -9,7 +9,7 @@ export function Chicken({title,searchPath}) {
    }, [title]);
  
    return (
-     <div className="container mx-auto my-5 px-4 mb-30">
+     <div className="container mx-auto my-45 px-4  lg:my-30">
        <div className="grid lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10">
          {Array.isArray(recipe) && recipe.length > 0 ? (
            recipe.map((datas) => (

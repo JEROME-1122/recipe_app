@@ -8,7 +8,7 @@ export function SearchResults() {
   const { data: recipe } = Recipeapi("", term);
 
   return (
-    <div className="container mx-auto my-5 px-4 mb-30">
+    <div className="container mx-auto my-45 px-4  lg:my-30" >
       <h2 className="text-2xl font-bold mb-4">Results for: "{term}"</h2>
       <div className="grid lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10">
         {Array.isArray(recipe) && recipe.length > 0 ? (
