@@ -9,6 +9,8 @@ export function FavList() {
   useEffect(() => {
     const savedFavs = JSON.parse(localStorage.getItem(favKey)) || [];
     setFavorites(savedFavs);
+
+    document.title="Favorite List"
   }, []);
 
   const handleDelete = (idToDelete) => {
@@ -20,7 +22,7 @@ export function FavList() {
   };
 
   return (
-    <div className="container mx-auto py-5 mt-10">
+    <div className="container mx-auto py-5 my-35 px-4 lg:my-30">
       <h2 className="text-2xl font-bold mb-4">Favorite Items</h2>
 
       {favorites.length === 0 ? (
