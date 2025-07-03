@@ -1,0 +1,19 @@
+Step 1 : create navbar  using router dom  and add the pathb in App.jsx
+
+Step 2 : then create api calls in Recipeapi.jsx and fetch the sruel and save in data  using try catch methor to save the dava if not feth show the error and return the data . we have more pages so we add in seerchpath 
+
+Step 3 : in app.jsx we add the searchApi peth and through the props send the search path value .
+
+Step 4 : And design and pass the value in home beaf, chicken.... and import the pi path and send the searchpath key word and get the details in datat and using map method to show the each data in RecipeCard component.
+
+Step 5 : we pass the data and  add  show in to the the and each card hav fav herat button if we click the button it store the data and we store the data local storage key(favRecipes) and if the data is add the localstorage and the heart is update if we click the hreat delte the item in the local storage using.
+
+Step 6 :  then if we click each card we can see the detailed page using the id (idMeal)  and send the value in detail page(RecipeDetail).
+
+Step 7 :  we Feth the id from the link using params and add in the url  tehn fetch the data and render the datas. 
+
+Step 8 : And we can search the recipe with the name in navbar there we pass the value in searchpage  and display the relevent item in this page .
+
+Step 9 : and display the count value in fav how much we added in the fav list 
+
+
